@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+    #6
+    Напишите программу для создания списка, которые будет вводить пользователь.
+    Для каждого пункта:
+    Запрашивайте содержимое пункта у пользователя с помощью prompt.
+    Создавайте пункт и добавляйте его к <ul>.
+    Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.
+
+    */
+
+    // Solotion
+
+    const list = document.querySelector('.list');
+
+    let input;
+
+    while (input = prompt('?')) {
+      list.insertAdjacentHTML("beforeend", `<li>${input}</li>`);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+    #2
+    Write a JavaScript program to display the current day and time in the following format.  
+    Sample Output : 
+    Today is: Friday. 
+    Current time is: 4PM:50:22
+    */
+
+    // Solution
+
+    const now = new Date();
+
+    const days = [
+      'Воскресенье',
+      'Понедельник',
+      'Вторник',
+      'Среда',
+      'Четверг',
+      'Пятница',
+      'Суббота'
+    ];
+
+    const n = now.getDay();
+
+    let hour = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    console.log(`Today is: ${days[n]}`);
+    console.log(`Current time is: ${hour}:${minutes}:${seconds}`);
+  </script>
+</body>
+
+</html>
