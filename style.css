@@ -1,9 +1,9 @@
-body {
+.canvas-wrap {
   margin: 0;
   width: 100vw;
   height: 100vh;
   background: #ffffff;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
